@@ -33,6 +33,7 @@ function Home({navigation}) {
 // 		trang Home không để onBack về trang login trực tiếp
 //        	onBack={()=>navigation.navigate('Login')}
 				title='Home'
+	  	onPress={()=>navigation.navigate('NewWork')}
 			></Header>
 			<View style={styles.container}>
         <View style={styles.Options}>
