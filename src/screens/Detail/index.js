@@ -9,6 +9,7 @@ function Detail({ navigation }) {
 			<Header
 				onBack={()=>navigation.navigate('Home')}
 				title='Detail'
+				onPress={()=>navigation.navigate('NewWork')}
 			></Header>
 			<View style={styles.container}>
         <Text>Đấy là trang Detail</Text>
