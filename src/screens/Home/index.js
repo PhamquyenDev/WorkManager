@@ -29,8 +29,9 @@ function ItemList({ data, onPress }) {
 function Home({navigation}) {
   return (
 		<View style={styles.waper}>
-			<Header 
-//        onBack={()=>navigation.navigate('Login')}
+			<Header
+// 		trang Home không để onBack về trang login trực tiếp
+//        	onBack={()=>navigation.navigate('Login')}
 				title='Home'
 			></Header>
 			<View style={styles.container}>
