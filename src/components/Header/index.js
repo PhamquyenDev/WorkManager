@@ -1,20 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import styles from "./styles";
-import NewWork from "../../screens/NewWork";
 
-const addbtn = (onPress) => {
-    return (
-        <TouchableOpacity 
-            style={styles.addBtn} 
-            onPress={onPress}>
-            <Text style={styles.addText}>+</Text>
-        </TouchableOpacity>
-    );
-}
-
-
-function Header({ title, onBack }) {
+function Header({ title, onBack, onPress }) {
     const checkBackBtn = () => {
         if(onBack === null) {
             return (null);
@@ -27,7 +15,19 @@ function Header({ title, onBack }) {
         );
 
     }
-
+    const addbtn = () => {
+        if(onPress === null) {
+            return (null);
+        }
+        return (
+            <TouchableOpacity 
+                style={styles.addBtn} 
+                onPress={onPress}>
+                <Text style={styles.addText}>+</Text>
+            </TouchableOpacity>
+        );
+    }
+    
     return (
         <SafeAreaView style={styles.safeAreaView}>
             <View style={styles.container}>
@@ -43,7 +43,8 @@ function Header({ title, onBack }) {
 
 Header.defaultProps = {
     title: 'Header',
-    onBack: null
+    onBack: null,
+    onPress: null
 }
 
 export default Header;
