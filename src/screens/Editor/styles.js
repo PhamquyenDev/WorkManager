@@ -17,13 +17,24 @@ const styles = StyleSheet.create({
 		marginHorizontal: 16,
 		marginVertical: 8
 	},
-	header: {
-		fontSize: 18,
-		fontWeight: '700'
-	},
-	info: {
-		fontSize: 15
-	},
+	option: {
+        justifyContent:'center',
+        width:'100%',
+        height:50,
+        flexDirection: 'row'
+    },
+    label:{
+        flex: 1,
+    },
+    input: {
+        flex: 3,
+        width: 300,
+        height: 40,
+        backgroundColor: 'rgba(0,0,0,.1)',
+        borderRadius: 7,
+        fontSize: 20,
+        paddingHorizontal: 15,
+    },
 	btnOption: {
         marginTop:50,
         flex:1,
@@ -32,18 +43,21 @@ const styles = StyleSheet.create({
         flexDirection:'row'
     },
     btnDone:{
-        width:300,
+        flex:1,
+        height:40,
+        borderRadius: 7,
+        backgroundColor: 'blue',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    btnCancel:{
+        flex:1,
         height:40,
         borderRadius: 7,
         backgroundColor: 'red',
         justifyContent: 'center',
         alignItems: 'center'
-    },
-	txtComplete: {
-		color: '#fff',
-		fontSize: 17,
-		fontWeight: 'bold'
-	}
+    }
 });
 
 export default styles;

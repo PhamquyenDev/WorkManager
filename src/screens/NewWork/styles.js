@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     option: {
+        justifyContent:'center',
         width:'100%',
         height:50,
         flexDirection: 'row'
@@ -32,12 +33,18 @@ const styles = StyleSheet.create({
         fontSize: 20,
         paddingHorizontal: 15,
     },
-    btnAdd: {
-        width: 300,
-        height: 40,
+    btnOption: {
+        marginTop:50,
+        flex:1,
+        justifyContent:"center",
+        alignItems:'center',
+        flexDirection:'row'
+    },
+    btnDone:{
+        width:300,
+        height:40,
         borderRadius: 7,
-        backgroundColor: '#000',
-        marginTop: 50,
+        backgroundColor: 'blue',
         justifyContent: 'center',
         alignItems: 'center'
     },

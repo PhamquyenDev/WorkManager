@@ -5,7 +5,7 @@ const Works = [
         name:"Update",
         desception: "Update chức năng mua hàng",
         datetime:"5/3/2021 10:00",
-        status: 'đã Hoàn thành'
+        status: 'Đã Hoàn thành'
     },
     {
         id:2,
@@ -13,7 +13,7 @@ const Works = [
         name:"code",
         desception: "code chức năng thêm mới item",
         datetime:"5/3/2021 11:00",
-        status: 'đã Hoàn thành'
+        status: 'Đã Hoàn thành'
     },
     {
         id:3,
@@ -21,7 +21,7 @@ const Works = [
         name:"désign",
         desception: "thiết kế giao diện screen thêm item",
         datetime:"5/3/2021 15:00 ",
-        status: 'đã Hoàn thành'
+        status: 'Đã Hoàn thành'
     },
     {
         id:4,
@@ -45,7 +45,23 @@ const Works = [
         name:"tester",
         desception: "kiểm tra mức độ hoàn thành",
         datetime:"1/3/2021 9:00",
-        status: 'đã Hoàn thành'
+        status: 'Đã Hoàn thành'
+    },
+    {
+        id:7,
+        userId:"phamquyen",
+        name:"Update",
+        desception: "Thêm tính năng sửa",
+        datetime:"16/3/2021 9:00",
+        status: 'chưa Hoàn thành'
+    },
+    {
+        id:8,
+        userId:"phamquyen",
+        name:"tester",
+        desception: "Debug lại các lỗi",
+        datetime:"21/3/2021 9:00",
+        status: 'chưa Hoàn thành'
     },
 ]
 

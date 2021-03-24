@@ -1,18 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { Component } from 'react';
+import React, { useState, useContext } from 'react';
 
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, Alert } from 'react-native';
 import Works from '../../service/Works';
 import styles from "./styles";
 
+import { Context } from "../Context";
 import Header from '../../components/Header';
 //import { useState } from 'react/cjs/react.development';
 
 function Detail({ navigation, route }) {
+	
 	const { workId } = route.params;
 	const work = Works.filter((item) => item.id === workId)[0];
 
-	const handleComplete = () => { }
+	//	// khi ấn Hoàn thành thì trạng thái đổi sang "Hoàn Thành"
+	// const [context, setContext] = useContext(Context);
+	const handleComplete = () => {
+		// var index = Works.indexOf(workId);
+    	// for(let item in Works) {
+		// 	if(item.id === workId) {
+		// 		item.status = 'Đã Hòn Thành';
+		// 	}
+		// }
+    	return Alert.alert('Đang hoàn thiện chức năng này!!');
+	}
 
 	return (
 		<View style={styles.waper}>
@@ -40,12 +51,12 @@ function Detail({ navigation, route }) {
 						<Text style={styles.info}>{work.status}</Text>
 					</View>
 				</View>
-				<View style={styles.complete}>
+				<View style={styles.btnOption}>
 					<TouchableOpacity
 						style={styles.btnDone}
 						onPress={handleComplete}
 					>
-						<Text style={styles.txtComplete}>Hoàn Thành</Text>
+						<Text style={styles.text}>Hoàn thành</Text>
 					</TouchableOpacity>
 				</View>
 			</View>

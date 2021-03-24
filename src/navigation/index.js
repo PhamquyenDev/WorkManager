@@ -6,6 +6,7 @@ import Home from "../screens/Home";
 import Login from "../screens/Login";
 import Detail from "../screens/Detail";
 import NewWork from "../screens/NewWork";
+import Editor from "../screens/Editor";
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ const Navigation = () => {
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Detail" component={Detail} />
                 <Stack.Screen name="NewWork" component={NewWork} />
+                <Stack.Screen name="Editor" component={Editor} />
             </Stack.Navigator>
         </NavigationContainer>
     );
